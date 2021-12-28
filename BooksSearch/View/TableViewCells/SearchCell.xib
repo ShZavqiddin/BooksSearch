@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="138" id="KGk-i7-Jjw" customClass="SearchCell" customModule="BooksSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ExL-1h-dRT">
+                        <rect key="frame" x="10" y="15" width="300" height="108"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-cW-8C5">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="108"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-dE-0lg">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="108"/>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-n9-QTa">
+                                        <rect key="frame" x="15" y="29" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4mw-a6-wsy"/>
+                                            <constraint firstAttribute="width" constant="50" id="TbS-Oo-wpj"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gRt-dE-0lg" secondAttribute="bottom" id="CHC-sJ-23P"/>
+                                    <constraint firstItem="gRt-dE-0lg" firstAttribute="top" secondItem="Huy-cW-8C5" secondAttribute="top" id="QxB-Ct-skf"/>
+                                    <constraint firstItem="w6I-n9-QTa" firstAttribute="centerY" secondItem="Huy-cW-8C5" secondAttribute="centerY" id="lRr-Rg-Uqb"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRt-dE-0lg" secondAttribute="trailing" id="mDe-Cq-GdI"/>
+                                    <constraint firstItem="gRt-dE-0lg" firstAttribute="leading" secondItem="Huy-cW-8C5" secondAttribute="leading" id="nDO-QT-AbJ"/>
+                                    <constraint firstItem="w6I-n9-QTa" firstAttribute="centerX" secondItem="Huy-cW-8C5" secondAttribute="centerX" id="rVy-JL-nMa"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ibu-Bh-GKw">
+                                <rect key="frame" x="100" y="23" width="200" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-Rx-cJe">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-pK-4uv">
+                                        <rect key="frame" x="0.0" y="41.5" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.3922809719" green="0.3922809719" blue="0.3922809719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ExL-1h-dRT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="KIg-T1-e48"/>
+                    <constraint firstAttribute="trailing" secondItem="ExL-1h-dRT" secondAttribute="trailing" constant="10" id="ZAd-sC-oS3"/>
+                    <constraint firstItem="ExL-1h-dRT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="a2m-dH-Yck"/>
+                    <constraint firstItem="Huy-cW-8C5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="nns-MJ-BR6"/>
+                    <constraint firstAttribute="bottom" secondItem="ExL-1h-dRT" secondAttribute="bottom" constant="15" id="tY3-TL-GUn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLbl" destination="SYT-pK-4uv" id="cYn-i0-Lbm"/>
+                <outlet property="booksImage" destination="gRt-dE-0lg" id="Acc-Aa-6P9"/>
+                <outlet property="loader" destination="w6I-n9-QTa" id="kQz-2S-ggS"/>
+                <outlet property="titleLBl" destination="bh5-Rx-cJe" id="2fD-60-OVI"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="102.45535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
